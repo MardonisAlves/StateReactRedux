@@ -3,6 +3,8 @@ import Todo from '../todo/todo'
 import Menu from '../template/menu'
 import TableList from '../todo/tableList';
 import TodoForms from '../todo/todoForms';
+import Relatorio from '../relatorio/beneficiario';
+import ListaBeneficiarios from '../relatorio/listaBeneficiarios/listaBeneficiarios';
 import '../main/main.css'
 
 function App() {
@@ -12,7 +14,8 @@ function App() {
         <Todo></Todo>
         <TodoForms></TodoForms>
         <TableList></TableList>
-
+       
+        <ListaBeneficiarios />
     </div>
   );
 }

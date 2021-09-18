@@ -3,8 +3,19 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { changeValue } from './todoActions/todoActions';
 import {Container} from 'react-bootstrap';
+import axios from 'axios';
+import header from '../config/headers/headerToken'
 import '../main/main.css'
 class Field extends Component {
+
+   componentDidMount(){
+    axios.get(`${process.env.REACT_APP_URL}/userlogado`,header()
+    ).then(function(response){
+       //console.log(response.data.users);
+    }).catch((error) =>{
+    console.log(error)
+    }); 
+   } 
 
     render() {
         return (
