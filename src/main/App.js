@@ -14,8 +14,6 @@ function App() {
         <Todo></Todo>
         <TodoForms></TodoForms>
         <TableList></TableList>
-       
-        <ListaBeneficiarios />
     </div>
   );
 }
